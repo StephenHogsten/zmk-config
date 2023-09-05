@@ -107,7 +107,7 @@
 		sym_layer {
 			bindings = <
                    &kp TILDE           &kp PLUS             &kp COLON           &kp UNDERSCORE          &trans                   &kp HOME          &kp PAGE_DOWN       &kp PAGE_UP      &kp END             &kp PIPE
-                   &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &sk LCTRL MINUS         &trans                   &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
+                   &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &lhm LCTRL MINUS        &trans                   &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
                    &trans              &kp LBRC             &kp LBKT            &kp LPAR                &trans                   &kp GT            &kp RPAR            &kp RBKT         &kp RBRC            &kp BACKSLASH
 				 /*&            &*/           &trans        &trans             &trans                                            &trans              &trans           &trans
 			>;
