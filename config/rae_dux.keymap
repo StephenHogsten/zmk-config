@@ -17,10 +17,6 @@
 #define SYM_L   2
 #define SPECIAL_L   3
 
-#define CUT   LG(X)
-#define COPY  LG(C)
-#define PASTE LG(V)
-
 #define MEH(KEY) LS(LC(LA(LG(KEY))))
 
 / {
@@ -48,16 +44,6 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-        COMBO(caps_word_left, &caps_word, 13 14, 60)
-        COMBO(caps_word_right, &caps_word, 15 16, 60)
-
-        COMBO(grave, &kp GRAVE, 1 2, 60)
-        COMBO(colon, &kp COLON, 7 8, 60)
-        COMBO(equal, &kp EQUAL, 21 22, 60)
-        COMBO(semicolon, &kp SEMI, 27 28, 60)
-
-        COMBO(minus, &kp MINUS, 31 34, 60)
-        COMBO(underscore, &kp UNDER, 32 33, 60)
     };
 
     behaviors {
@@ -120,7 +106,7 @@
                    &kp Q        &kp W         &kp F              &kp P              &kp B                &kp J              &kp L               &kp U                 &kp Y         &kp APOS
                    &lhm LALT A  &lhm LGUI R   &lhm LSHFT S       &lhm LCTRL T       &kp G                &kp K              &rhm LCTRL N        &rhm RSHFT E          &rhm LGUI I   &rhm RALT O
                    &kp Z        &kp X         &kp C              &kp D              &kp V                &kp M              &kp H               &kp COMMA             &kp DOT       &kp FSLH
-			    	 /*&            &*/           &base_lt  NUM_L ESC &base_lt SYM_L SPC &base_lt NAV_L TAB &base_lt NUM_L DEL &base_lt SYM_L BSPC &base_lt NAV_L RET  /*&             &*/
+			    	 /*&            &*/           &base_lt  SPECIAL_L ESC &base_lt SYM_L TAB &base_lt SYM_L SPC             &base_lt NUM_L RET &base_lt NUM_L BSPC &base_lt SPECIAL_L DEL  /*&             &*/
 			>;
 		};
 
