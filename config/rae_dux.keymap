@@ -21,8 +21,7 @@
 
 / {
     macros {
-        ZMK_MACRO(scope, wait-ms = <30>; tap-ms = <30>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(lambda, wait-ms = <30>; tap-ms = <30>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
+        ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N &kp LPAR &kp x &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC &kp RPAR>;)
     };
 
     combos {
@@ -84,19 +83,6 @@
             global-quick-tap-ms = <100>;
             bindings = <&mo>, <&kp>;
         };
-
-        /*
-        rpt_lt: repeat_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "REPEAT_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            global-quick-tap;
-            bindings = <&mo>, <&key_repeat>;
-        };
-        */
     };
 
 	keymap {
@@ -104,10 +90,10 @@
 
 		base_layer {
 			bindings = <
-                   &kp Q        &kp W         &kp F              &kp P              &kp B                &kp J              &kp L               &kp U                 &kp Y         &kp APOS
-                   &lhm LALT A  &lhm LGUI R   &lhm LSHFT S       &lhm LCTRL T       &kp G                &kp K              &rhm LCTRL N        &rhm RSHFT E          &rhm LGUI I   &rhm RALT O
-                   &kp Z        &kp X         &kp C              &kp D              &kp V                &kp M              &kp H               &kp COMMA             &kp DOT       &kp FSLH
-			    	 /*&            &*/           &base_lt SPECIAL_L ESC    base_lt SYM_L TAB       &base_lt SYM_L SPC      &base_lt NUM_L RET  &base_lt NUM_L BSPC   &base_lt SPECIAL_L DEL  /*&             &*/
+                   &kp Q         &kp W         &kp F              &kp P              &kp B                &kp J              &kp L                &kp U                 &kp Y         &kp APOS
+                   &lhm LALT A   &lhm LGUI R   &lhm LSHFT S       &lhm LCTRL T       &kp G                &kp K              &rhm LCTRL N         &rhm RSHFT E          &rhm LGUI I   &rhm RALT O
+                   &kp Z         &kp X         &kp C              &kp D              &kp V                &kp M              &kp H                &kp COMMA             &kp DOT       &kp FSLH
+			    	 /*&            &*/           &base_lt SPECIAL_L ESC    base_lt SYM_L TAB       &base_lt SYM_L SPC       &base_lt NUM_L RET   &base_lt NUM_L BSPC   &base_lt SPECIAL_L DEL
 			>;
 		};
 
@@ -116,7 +102,7 @@
                    &kp F1           &kp F2          &kp F3          &kp F4          &kp F5              &kp F6      &kp F7          &kp F8          &kp F9          &kp F10
                    &lhm LALT N1     &lhm LGUI N2    &lhm LSHFT N3   &lhm LCTRL N4   &kp N5              &kp N6      &rhm RCTRL N7   &rhm RSHFT N8   &rhm RGUI N9    &rhm RALT N0
                    &kp EXCL         &kp AT          &kp HASH        &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS        &kp APOS        &kp F11         &kp F12
-				 /*&            &*/                 &trans          &trans          &trans              &trans      &trans          &trans                 /*&             &*/
+				 /*&            &*/                 &trans          &trans          &trans              &trans      &trans          &trans
 			>;
 		};
 
@@ -125,13 +111,13 @@
                    &kp TILDE           &kp PLUS             &kp COLON           &kp UNDERSCORE          &trans                   &kp HOME          &kp PAGE_DOWN       &kp PAGE_UP      &kp END             &kp PIPE
                    &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &sk LCTRL MINUS         &trans                   &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
                    &trans              &kp LBRC             &kp LBKT            &kp LPAR                &trans                   &kp GT            &kp RPAR            &kp RBKT         &kp RBRC            &kp BACKSLASH
-				 /*&            &*/           &trans        &trans             &trans                   &trans              &trans           &trans             /*&             &*/
+				 /*&            &*/           &trans        &trans             &trans                                            &trans              &trans           &trans
 			>;
 		};
 
         special_layer {
             bindings = <
-                &trans  &trans  &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &promise    &trans                      &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &caps_word  &trans                      &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans      &trans                      &trans  &trans  &trans
