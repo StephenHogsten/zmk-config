@@ -17,11 +17,9 @@
 #define SYM_L   2
 #define SPECIAL_L   3
 
-#define MEH(KEY) LS(LC(LA(LG(KEY))))
-
 / {
     macros {
-        ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N &kp LPAR &kp x &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC &kp RPAR>;)
+        ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N>;)
     };
 
     combos {
