@@ -107,7 +107,7 @@
                    &kp Q        &kp W         &kp F              &kp P              &kp B                &kp J              &kp L               &kp U                 &kp Y         &kp APOS
                    &lhm LALT A  &lhm LGUI R   &lhm LSHFT S       &lhm LCTRL T       &kp G                &kp K              &rhm LCTRL N        &rhm RSHFT E          &rhm LGUI I   &rhm RALT O
                    &kp Z        &kp X         &kp C              &kp D              &kp V                &kp M              &kp H               &kp COMMA             &kp DOT       &kp FSLH
-			    	 /*&            &*/           &base_lt  SPECIAL_L ESC &base_lt SYM_L TAB &base_lt SYM_L SPC             &base_lt NUM_L RET &base_lt NUM_L BSPC &base_lt SPECIAL_L DEL  /*&             &*/
+			    	 /*&            &*/           &base_lt SPECIAL_L ESC    base_lt SYM_L TAB       &base_lt SYM_L SPC      &base_lt NUM_L RET  &base_lt NUM_L BSPC   &base_lt SPECIAL_L DEL  /*&             &*/
 			>;
 		};
 
