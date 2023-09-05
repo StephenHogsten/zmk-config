@@ -22,7 +22,7 @@
         ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N &kp LPAR &kp X &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC &kp RPAR>;)
         ZMK_MACRO(anon, wait-ms = <30>; tap-ms = <30>; bindings = <&kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC>;)
         ZMK_MACRO(arrow, wait-ms = <30>; tap-ms = <30>; bindings = <&kp EQUAL &kp GT>;)
-        ZMK_MACRO(function, wait-ms = <30>; tap-ms = <30>; bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;)
+        ZMK_MACRO(functext, wait-ms = <30>; tap-ms = <30>; bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;)
         ZMK_MACRO(conlog, wait-ms = <30>; tap-ms = <30>; bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G>;)
     };
 
@@ -111,9 +111,9 @@
 		sym_layer {
 			bindings = <
                    &kp TILDE           &kp PLUS             &kp COLON           &kp UNDERSCORE          &conlog                 &kp HOME          &kp PAGE_DOWN       &kp PAGE_UP      &kp END             &kp PIPE
-                   &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &lhm LCTRL MINUS        &function               &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
+                   &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &lhm LCTRL MINUS        &functext               &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
                    &trans              &kp RBRC             &kp RBKT            &kp RPAR                &arrow                  &kp GT            &kp LPAR            &kp LBKT         &kp LBRC            &kp BACKSLASH
-				 /*&            &*/           &trans        &trans             &trans                                            &trans              &kp SPC           &trans
+				 /*&            &*/           &trans        &trans             &trans                                           &trans            &kp SPC             &trans
 			>;
 		};
 
@@ -121,7 +121,7 @@
             bindings = <
                 &trans  &trans  &trans  &promise    &trans                      &kp INS     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PSCRN  &kp PAUSE_BREAK
                 &anon   &trans  &trans  &kp caps    &kp caps_word               &kp C_MUTE  &kp C_VOL_DN          &kp C_VOL_UP          &trans     &trans
-                &trans  &trans  &trans  &trans      &trans                      &kp K_MUTE  &trans      &trans  &trans  &trans
+                &trans  &trans  &trans  &trans      &trans                      &kp K_MUTE  &trans                &trans                &trans     &trans
                                 &trans  &trans      &trans                      &trans  &trans  &trans
             >;
         };
