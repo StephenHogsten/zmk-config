@@ -22,8 +22,8 @@
         ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N &kp LPAR &kp X &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC &kp RPAR>;)
         ZMK_MACRO(anon, wait-ms = <30>; tap-ms = <30>; bindings = <&kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC>;)
         ZMK_MACRO(arrow, wait-ms = <30>; tap-ms = <30>; bindings = <&kp EQUAL &kp GT>;)
-        ZMK_MACRO(function, wait-ms = <30>; tap-ms = <30>; bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N)
-        ZMK_MACRO(conlog, wait-ms = <30>; tap-ms = <30>; bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G)
+        ZMK_MACRO(function, wait-ms = <30>; tap-ms = <30>; bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;)
+        ZMK_MACRO(conlog, wait-ms = <30>; tap-ms = <30>; bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G>;)
     };
 
     combos {
