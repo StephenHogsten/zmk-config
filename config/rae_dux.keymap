@@ -112,7 +112,7 @@
 			bindings = <
                    &kp TILDE           &kp PLUS             &kp COLON           &kp UNDERSCORE          &conlog                 &kp HOME          &kp PAGE_DOWN       &kp PAGE_UP      &kp END             &kp PIPE
                    &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &lhm LCTRL MINUS        &functext               &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC              
-                   &trans              &kp RBRC             &kp RBKT            &kp RPAR                &arrow                  &kp GT            &kp LPAR            &kp LBKT         &kp LBRC            &kp BACKSLASH
+                   &caps_word          &kp RBRC             &kp RBKT            &kp RPAR                &arrow                  &kp GT            &kp LPAR            &kp LBKT         &kp LBRC            &kp BACKSLASH
 				 /*&            &*/           &trans        &trans             &trans                                           &trans            &kp SPC             &trans
 			>;
 		};
