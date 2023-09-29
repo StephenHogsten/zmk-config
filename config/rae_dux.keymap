@@ -130,7 +130,7 @@
 			>;
 		};
 
-        special_layer {dddddsssscccxxzzaapprbgv
+        special_layer {
             bindings = <
                 &bt BT_CLR  &trans  &trans  &promise    &trans                  &kp INS     &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &kp PSCRN  &kp PAUSE_BREAK
                 &anon   &trans  &trans  &caps_word  &kp CAPS                   &kp C_MUTE  &kp C_VOL_DN               &kp C_VOL_UP          &trans     &trans
