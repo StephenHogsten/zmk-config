@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: andrewjrae
-      revision: v3.0.0+zmk-fixes
+      revision: rae-dux-shield
       import: app/west.yml
   self:
     path: config
