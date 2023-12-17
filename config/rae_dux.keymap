@@ -17,13 +17,17 @@
 #define SYM_L   2
 #define SPECIAL_L   3
 
+&lt {
+    quick-tap-ms = <200>;
+}
+
 / {
     macros {
         ZMK_MACRO(promise, wait-ms = <30>; tap-ms = <30>; bindings = <&kp DOT &kp T &kp H &kp E &kp N &kp LPAR &kp X &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC &kp RPAR>;)
         ZMK_MACRO(anon, wait-ms = <30>; tap-ms = <30>; bindings = <&kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC &kp RBRC>;)
         ZMK_MACRO(arrow, wait-ms = <30>; tap-ms = <30>; bindings = <&kp EQUAL &kp GT>;)
         ZMK_MACRO(functext, wait-ms = <30>; tap-ms = <30>; bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N>;)
-        ZMK_MACRO(conlog, wait-ms = <30>; tap-ms = <30>; bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G>;)
+        ZMK_MACRO(conlog, wait-ms = <30>; tap-ms = <30>; bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR>;)
     };
 
     combos {
@@ -88,16 +92,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 16 17 18 19 20 21 22 23 24 30 31 32 33 34 35>;
         };
 
-        base_lt: base_layer_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BASE_LAYER_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            // global-quick-tap-ms = <100>;
-            bindings = <&mo>, <&kp>;
-        };
+        // base_lt: base_layer_hold_tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "BASE_LAYER_HOLD_TAP";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <200>;
+        //     // global-quick-tap-ms = <100>;
+        //     bindings = <&mo>, <&kp>;
+        // };
     };
 
 	keymap {
@@ -108,7 +112,7 @@
                    &kp Q         &kp W         &kp F              &kp P              &kp B                &kp J              &kp L                &kp U                 &kp Y         &kp APOS
                    &lhm LALT A   &lhm LGUI R   &lhm LSHFT S       &lhctrl LCTRL T    &kp G                &kp K              &rhm LCTRL N         &rhm RSHFT E          &rhm LGUI I   &rhm RALT O
                    &kp Z         &kp X         &kp C              &kp D              &kp V                &kp M              &kp H                &kp COMMA             &kp DOT       &kp FSLH
-			    	 /*&            &*/           &base_lt SYM_L TAB    &base_lt SYM_L SPC       &base_lt SPECIAL_L ESC      &base_lt SPECIAL_L DEL   &base_lt NUM_L RET   &base_lt NUM_L BSPC
+			    	 /*&            &*/           &mo SYM_L TAB    &mo SYM_L SPC       &mo SPECIAL_L ESC      &mo SPECIAL_L DEL   &mo NUM_L RET   &mo NUM_L BSPC
 			>;
 		};
 
@@ -117,7 +121,7 @@
                    &kp F1           &kp F2          &kp F3          &kp F4          &kp F5              &kp F6      &kp F7          &kp F8          &kp F9          &kp F10
                    &lhm LALT N1     &lhm LGUI N2    &lhm LSHFT N3   &lhm LCTRL N4   &kp N5              &kp N6      &rhm RCTRL N7   &rhm RSHFT N8   &rhm RGUI N9    &rhm RALT N0
                    &kp EXCL         &kp AT          &kp HASH        &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS        &kp STAR        &kp F11         &kp F12
-				 /*&            &*/                 &base_lt SPECIAL_L TAB    &base_lt SPECIAL_L SPC       &base_lt SPECIAL_L ESC              &trans      &trans          &trans
+				 /*&            &*/                 &mo SPECIAL_L TAB    &mo SPECIAL_L SPC       &mo SPECIAL_L ESC              &trans      &trans          &trans
 			>;
 		};
 
@@ -126,7 +130,7 @@
                    &kp TILDE           &kp PLUS             &kp COLON           &kp UNDERSCORE          &conlog                 &kp HOME          &kp PAGE_DOWN       &kp PAGE_UP      &kp END             &kp PIPE
                    &lhm LALT GRAVE     &lhm LGUI EQUAL      &lhm LSHFT SEMI     &lhm LCTRL MINUS        &functext               &kp LEFT          &rhm RCTRL DOWN     &rhm RSHFT UP    &rhm RGUI RIGHT     &rhm RALT ESC
                    &caps_word          &kp RBRC             &kp RBKT            &kp RPAR                &arrow                  &kp GT            &kp LPAR            &kp LBKT         &kp LBRC            &kp BACKSLASH
-				 /*&            &*/           &trans        &trans             &trans                                           &base_lt SPECIAL_L DEL   &base_lt SPECIAL_L SPC   &base_lt SPECIAL_L BSPC
+				 /*&            &*/           &trans        &trans             &trans                                           &mo SPECIAL_L DEL   &mo SPECIAL_L SPC   &mo SPECIAL_L BSPC
 			>;
 		};
 
